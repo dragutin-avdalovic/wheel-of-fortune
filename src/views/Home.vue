@@ -1,18 +1,20 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <PlayArea></PlayArea>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import PlayArea from '@/components/PlayArea.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+      PlayArea
   }
 }
 </script>
+<style>
+  @import url(http://fonts.googleapis.com/css?family=Changa+One);
+</style>
