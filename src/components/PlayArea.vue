@@ -16,27 +16,27 @@
                     {
                         textFillStyle: '#fff',
                         fillStyle: '#000',
-                        text:'100'
+                        text:'100€'
                     },
                     {
                         textFillStyle: '#000',
                         fillStyle: '#fadede',
-                        text:'200'
+                        text:'200€'
                     },
                     {
                         textFillStyle: '#fff',
                         fillStyle: '#000',
-                        text:'300'
+                        text:'300€'
                     },
                     {
                         textFillStyle: '#000',
                         fillStyle: '#fadede',
-                        text:'400'
+                        text:'400€'
                     },
                     {
                         textFillStyle: '#fff',
                         fillStyle: '#000',
-                        text:'500'
+                        text:'500€'
                     },
                     {
                         textFillStyle: '#000',
@@ -46,37 +46,37 @@
                     {
                         textFillStyle: '#fff',
                         fillStyle: '#000',
-                        text:'600'
+                        text:'600€'
                     },
                     {
                         textFillStyle: '#000',
                         fillStyle: '#fadede',
-                        text:'700'
+                        text:'700€'
                     },
                     {
                         textFillStyle: '#fff',
                         fillStyle: '#000',
-                        text:'800'
+                        text:'800€'
                     },
                     {
                         textFillStyle: '#000',
                         fillStyle: '#fadede',
-                        text:'900'
+                        text:'900€'
                     },
                     {
                         textFillStyle: '#fff',
                         fillStyle: '#000',
-                        text:'1000'
+                        text:'1000€'
                     },
                     {
                         textFillStyle: '#fff',
                         fillStyle: '#000',
-                        text:'1100'
+                        text:'1100€'
                     },
                     {
                         textFillStyle: '#000',
                         fillStyle: '#fadede',
-                        text:'1200'
+                        text:'1200€'
                     },
                     {
                         textFillStyle: '#fff',
