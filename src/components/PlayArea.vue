@@ -1,7 +1,6 @@
 <template>
     <vue-winwheel :segments="options"></vue-winwheel>
 </template>
-
 <script>
     import VueWinwheel from 'vue-winwheel'
     export default {
@@ -68,11 +67,6 @@
                         textFillStyle: '#fff',
                         fillStyle: '#000',
                         text:'1000'
-                    },
-                    {
-                        textFillStyle: '#000',
-                        fillStyle: '#fadede',
-                        text:'TRY AGAIN'
                     },
                     {
                         textFillStyle: '#fff',
