@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.62f320738c45c3701d132bc66d2f9109.js"
+  "/precache-manifest.cb4f3fe6bfbff17ffe2c10cdb361a547.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "wheel-of-fortune"});
