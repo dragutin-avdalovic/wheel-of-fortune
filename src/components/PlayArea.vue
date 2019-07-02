@@ -1,7 +1,9 @@
 <template>
-    <vue-winwheel :segments="options"></vue-winwheel>
+    <vue-winwheel :segments="options" @spin="count"></vue-winwheel>
 </template>
 <script>
+    /* eslint-disable no-console */
+
     import VueWinwheel from 'vue-winwheel'
     export default {
         name: "PlayArea",
@@ -88,7 +90,15 @@
         },
         components: {
             VueWinwheel
-        }
+        },
+        methods: {
+            count: function (value) {
+                var str = value.split("€");
+                var amountWin = parseFloat(str[0]);
+                console.log(amountWin);
+                this.$emit('addValue', amountWin );
+            }
+        },
     }
 </script>
 
