@@ -7,7 +7,7 @@
           <h2 class="leaderboard">LEADERBOARD</h2>
           <el-table
                   :data="tableData"
-                  style="width: 100%"
+                  style="width: 100%; max-height: 220px; overflow: auto;"
                   :row-class-name="tableRowClassName">
               <el-table-column
                       prop="place"
@@ -26,6 +26,11 @@
               </el-table-column>
           </el-table>
           <div class="score-so-far">Your score so far: <div class="score"> {{score}}€</div></div>
+          <label>Name</label>
+          <el-input placeholder="Please input your name"
+                    v-model="input"
+                    clearable></el-input>
+          <el-button @click="savePlayerScore(score, input)">Save game</el-button>
       </div>
   </div>
 </template>
@@ -47,31 +52,25 @@ methods: {
     },
     add: function (value) {
         this.score += value;
+    },
+    savePlayerScore(score) {
+        if(this.input !== '') {
+            this.tableData.push({ place: `${this.i++}.`, name: this.input, points: score.toString()});
+        } else {
+            this.tableData.push({ place: `${this.i++}.`, name: 'anonimus', points: score.toString()});
+        }
     }
 },
 data() {
     return {
+        input:'',
+        i: 1,
         score: 0,
         tableData: [
             {
-                place: '1',
-                name: 'Tom',
-                points: '22'
-            },
-            {
-                place: '1',
-                name: 'Tom',
-                points: '22'
-            },
-            {
-                place: '1',
-                name: 'Tom',
-                points: '22'
-            },
-            {
-                place: '1',
-                name: 'Tom',
-                points: '22'
+                place: '',
+                name: '',
+                points: ''
             }
             ]
     }

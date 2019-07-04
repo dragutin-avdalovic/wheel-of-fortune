@@ -66,19 +66,24 @@
                         text:'900€'
                     },
                     {
-                        textFillStyle: '#fff',
+                        textFillStyle: '#000',
                         fillStyle: '#000',
                         text:'1000€'
                     },
                     {
+                        textFillStyle: '#000',
+                        fillStyle: '#fadede',
+                        text:'1100€'
+                    },
+                    {
                         textFillStyle: '#fff',
                         fillStyle: '#000',
-                        text:'1100€'
+                        text:'1200€'
                     },
                     {
                         textFillStyle: '#000',
                         fillStyle: '#fadede',
-                        text:'1200€'
+                        text:'1400€'
                     },
                     {
                         textFillStyle: '#fff',
@@ -93,9 +98,14 @@
         },
         methods: {
             count: function (value) {
-                var str = value.split("€");
-                var amountWin = parseFloat(str[0]);
-                console.log(amountWin);
+                var amountWin = 0;
+                if( value.includes  ("€")) {
+                    var str = value.split("€");
+                    amountWin = parseFloat(str[0]);
+                    console.log(amountWin);
+                } else {
+                    amountWin = 0;
+                }
                 this.$emit('addValue', amountWin );
             }
         },
