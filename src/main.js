@@ -12,7 +12,7 @@ Vue.use(VModal)
 // configure language
 locale.use(lang);
 
-Vue.use(Element)
+Vue.use(Element);
 
 Vue.config.productionTip = false
 
