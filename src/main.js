@@ -6,6 +6,9 @@ import './registerServiceWorker'
 import lang from 'element-ui/lib/locale/lang/en';
 import locale from 'element-ui/lib/locale';
 import Element from 'element-ui'
+import VModal from 'vue-js-modal'
+
+Vue.use(VModal)
 // configure language
 locale.use(lang);
 
